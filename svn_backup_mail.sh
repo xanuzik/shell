@@ -21,7 +21,7 @@ do
 	echo " " >> success.txt
 done
 
-cat success.txt | mail -s "CCSVNB Backup Succeeded" morty.han@avepoint.com
+cat success.txt | mail -s "CCSVNB Backup Succeeded" xxx@xxx.com
 
 mv -f newsize.txt oldsize.txt
 mv -f newversion.txt oldversion.txt
