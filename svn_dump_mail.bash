@@ -3,11 +3,12 @@
 today=$(date +%y-%m-%d)
 echo $today
 
-
-svn_mkdir() #在ftp上以日期创建dump文件夹
+#在ftp上以日期创建dump文件夹
+#输入FTP的用户名和密码
+svn_mkdir() 
 {
 ftp -n 10.1.0.x << EOF
-user svnftp SVwsx@ #FTP的用户名和密码
+user svnftp SVwsx@ 
 cd svn
 mkdir dump-$today
 EOF
