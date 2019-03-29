@@ -7,7 +7,7 @@ echo $today
 #输入FTP的用户名和密码
 svn_mkdir() 
 {
-ftp -n 10.1.0.x << EOF
+ftp -n 10.x.x.x << EOF
 user svnftp SVwsx@ 
 cd svn
 mkdir dump-$today
@@ -16,7 +16,7 @@ EOF
 
 svn_upload()
 {
-ftp -n 10.1.0.x << EOF
+ftp -n 10.x.x.x << EOF
 user svnftp SVwsx@
 cd svn
 cd dump-$today
