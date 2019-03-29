@@ -2,7 +2,7 @@
 
 tar_download()
 {
-ftp -n 10.1.0.10 <<EOF
+ftp -n 10.x.x.x <<EOF
 user ftp 2wsx!@
 cd svn
 cd dump-18-07-22
