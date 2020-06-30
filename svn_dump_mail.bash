@@ -46,9 +46,9 @@ done
 
 if [ $? -eq 0 ];
 then 
-echo "Dump Succeeded" | mail -s "CCSVNB Weekly Dump to FTP Succeeded" xxx@xxx.com;
+echo "Dump Succeeded" | mail -s "Dump to FTP Succeeded" xxx@xxx.com;
 else 
-cat /root/dumpsync/errors.log | mail -s "CCSVNB Weekly Backup Failed" xxx@xxx.com;
+cat /root/dumpsync/errors.log | mail -s " Backup Failed" xxx@xxx.com;
 fi
 
 #rm -rf /opt/svndump/*.tar.gz
